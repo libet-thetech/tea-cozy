@@ -1,0 +1,208 @@
+body {
+    font-family: Helvetica, sans-serif;
+    color: seashell;
+    background-color: black;
+    margin: 0;
+    text-align: center;
+    font-size: 22px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    opacity: 0.9;
+    border-bottom: 1px solid seashell;
+    height: 69px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    background-color: black;
+}
+
+.logo a {
+    display: flex;
+    margin: 10px;
+    height: 50px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin-right: 20px;
+}
+
+.nav-list li a {
+    text-decoration: underline;
+    color: seashell;
+}
+
+/* Ensure the container is relatively positioned */
+#mission {
+    position: relative;
+    width: 100%; /* Ensure it takes the full width */
+    height: 700px; /* Adjust as necessary */
+    padding: 0 10px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+/* Make sure the image fills the container */
+.hero-image img {
+    width: 1200px;
+    height: 700px;
+    display: inline-flex; /* Remove any gap below the image */
+}
+
+/* Position the text over the image */
+.mission-text {
+    position: absolute;
+    top: 50%; /* Adjust the positioning as needed */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    color: white; /* Set the text color for better visibility */
+    text-align: center; /* Center align the text */
+    padding: 10px; /* Optional: Add padding for better readability */
+    background: black;
+    width: 100%;
+}
+
+/* Adjust the h2 and h4 styles as necessary */
+.mission-text h2, .mission-text h4 {
+    margin: 0; /* Remove default margins */
+    padding: 10px; /* Add padding for spacing */
+}
+
+#featured-tea {
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center the content horizontally */
+    text-align: center; /* Center the text */
+}
+
+/* Style the gallery heading */
+.tea-gallery-heading {
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+/* Style the gallery as a flex container */
+.tea-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Space items evenly */
+    gap: 20px; /* Add space between items */
+    width: 1000px;
+    
+}
+
+/* Style individual tea items */
+.tea-item {
+    flex: 1 1 200px; /* Allow items to grow and shrink, set base size */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Set a fixed size for the images */
+.tea-item img {
+    width: 300px; /* Set desired width */
+    height: 200px; /* Set desired height */
+    /*object-fit: cover;  Ensure the image covers the entire area */
+}
+
+/* Style the text */
+.tea-item h4 {
+    margin-top: 10px; /* Add space between image and text */
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+/* Optional: Style the heading */
+.tea-gallery-heading {
+    text-align: center;
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+.tea-gallery-heading h2 {
+    font-size: 24px; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Add space below the heading */
+}
+
+.tea-gallery-heading h4 {
+    font-size: 18px; /* Adjust font size as needed */
+    color: #666; /* Optional: Adjust text color */
+}
+
+/* Style the locations section */
+/* Style the locations section */
+#locations {
+    position: relative; /* For positioning the background image */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Add padding to the section */
+}
+
+#locations h2 {
+    margin-bottom: 20px; /* Add space below the heading */
+    font-size: 24px; /* Adjust font size */
+}
+
+.location-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    z-index: -1; /* Place the image behind the content */
+}
+
+.location-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire area */
+}
+
+.location-info {
+    display: flex;
+    justify-content: space-around; /* Distribute boxes evenly */
+    flex-wrap: nowrap; /* Keep items in one line */
+    width: 100%; /* Ensure it takes the full width */
+    position: relative; /* For z-index control */
+    z-index: 1; /* Ensure it is above the background image */
+}
+
+.location {
+    background: black;
+    padding: 10px;
+    margin: 10px; /* Add margin between boxes */
+    width: 300px; /* Ensure items don't get too wide */
+    text-align: center; /* Center the text inside the box */
+}
+
+.location h3 {
+    margin-bottom: 10px; /* Add space below the heading */
+    font-size: 24px; /* Adjust font size */
+}
+
+.location h4 {
+    font-size: 22px; /* Adjust font size */
+    line-height: 1.5; /* Adjust line height */
+}
+
+footer {
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center the content horizontally */
+    text-align: center; /* Center the text */
+    padding-top: 70px;
+    width: 100%; /* Ensure full width */
+}
+
+.copyright {
+    align-self: flex-start; /* Align the copyright to the start (left) */
+    text-align: left; /* Align text to the left */
+    width: 100%; /* Make sure it spans the full width for left alignment */
+    padding-left: 20px; /* Optional: add padding for spacing */
+}
